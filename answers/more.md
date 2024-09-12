@@ -34,7 +34,7 @@ let output2 = identity<number>(100);
 - Используйте выражение `typeof (параметр)! == 'undefined'`, чтобы проверить, был ли параметр инициализирован.
 
 ```typescript
-function multiply(a: number, b?: number, c: number): number {
+function multiply(a: number, b: number, c?: number): number {
 	if (typeof c !== "undefined") {
 		return a * b * c;
 	}
